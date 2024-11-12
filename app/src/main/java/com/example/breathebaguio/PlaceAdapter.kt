@@ -6,8 +6,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.breathebaguio.databinding.ItemPlaceBinding
 
 class PlaceAdapter(
-    private val places: List<com.example.breathebaguio.Place>,
-    private val onClick: (com.example.breathebaguio.Place) -> Unit
+    private val places: List<Place>,
+    private val onClick: (Place) -> Unit
 ) : RecyclerView.Adapter<PlaceAdapter.PlaceViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PlaceViewHolder {
@@ -26,7 +26,7 @@ class PlaceAdapter(
     inner class PlaceViewHolder(private val binding: ItemPlaceBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
-        fun bind(place: com.example.breathebaguio.Place, onClick: (com.example.breathebaguio.Place) -> Unit) {
+        fun bind(place: Place, onClick: (Place) -> Unit) {
             binding.placeName.text = place.name
             binding.root.setOnClickListener { onClick(place) }
         }

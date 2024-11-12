@@ -22,20 +22,20 @@ class MainFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        binding.clubAndBarButton.setOnClickListener {
-            navigateToCategory("Club and Bar")
-        }
-        binding.restaurantsButton.setOnClickListener {
-            navigateToCategory("Restaurants")
-        }
         binding.kidFriendlyButton.setOnClickListener {
             navigateToCategory("Kid-Friendly Places")
         }
         binding.parksButton.setOnClickListener {
             navigateToCategory("Parks")
         }
-        binding.shoppingCentersButton.setOnClickListener {
-            navigateToCategory("Shopping Centers")
+        binding.restaurantsButton.setOnClickListener {
+            navigateToCategory("Restaurants")
+        }
+        binding.buffetStyleFoodButton.setOnClickListener {
+            navigateToCategory("Buffet Style Buffet")
+        }
+        binding.coffeeShopsButton.setOnClickListener {
+            navigateToCategory("Coffee Shops")
         }
     }
 
@@ -49,18 +49,17 @@ class MainFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
-}
 
-private fun NavController.navigate(action: Any) {
-    TODO("Not yet implemented")
-}
-
-class MainFragmentDirections {
-    companion object {
-        fun actionMainFragmentToCategoryFragment(category: String): Any {
-            TODO("Not yet implemented")
-            return TODO("Provide the return value")
-        }
+    private fun NavController.navigate(action: Any) {
+        TODO("Not yet implemented")
     }
 
+    class MainFragmentDirections {
+        companion object {
+            fun actionMainFragmentToCategoryFragment(category: String): Any {
+                TODO("Not yet implemented")
+                return TODO("Provide the return value")
+            }
+        }
+    }
 }

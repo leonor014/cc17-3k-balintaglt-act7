@@ -32,12 +32,12 @@
         android:textColor="@color/white"/>
 
     <Button
-        android:id="@+id/shoppingCentersButton"
+        android:id="@+id/parksButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Parks"
         android:textSize="20sp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="#0C6110"
         android:textColor="@color/white"/>
 
@@ -45,29 +45,29 @@
         android:id="@+id/restaurantsButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Restaurant"
+        android:text="Restaurants"
         android:textSize="20sp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="#0C6110"
         android:textColor="#F6F3F3"/>
 
     <Button
-        android:id="@+id/club_and_barButton"
+        android:id="@+id/buffet_style_foodButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Buffet Style Food"
         android:textSize="20sp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="#0C6110"
         android:textColor="@color/white"/>
 
     <Button
-        android:id="@+id/parksButton"
+        android:id="@+id/coffee_shopsButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Coffee Shops"
         android:textSize="20sp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="#0C6110"
         android:textColor="@color/white"/>
 

@@ -11,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.breathebaguio"
-        minSdk = 24
+        minSdk = 25
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -35,17 +35,18 @@ android {
         // The correct way to enable view binding in Gradle Kotlin DSL
     }
 
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+
     kotlinOptions {
         jvmTarget = "1.8"
     }
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -56,10 +57,7 @@ dependencies {
     implementation(libs.androidx.navigation.fragment)
     implementation("androidx.navigation:navigation-ui-ktx:2.7.3") // Navigation UI
     implementation(libs.androidx.recyclerview) // Add this line
-    implementation("androidx.recyclerview:recyclerview:1.3.0")
-    implementation(project(":app"))
-
-
+    implementation("androidx.recyclerview:recyclerview:1.3.0") // Directly add RecyclerView
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

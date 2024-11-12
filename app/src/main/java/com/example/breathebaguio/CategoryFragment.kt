@@ -7,14 +7,22 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
-import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.breathebaguio.databinding.FragmentCategoryBinding
+import kotlin.reflect.KProperty
+import androidx.navigation.fragment.navArgs as navArgs1
 
 class CategoryFragment : Fragment() {
     private lateinit var binding: FragmentCategoryBinding
     private val viewModel: MainViewModel by viewModels()
-    private val args: CategoryFragmentArgs by navArgs()
+    private val args: CategoryFragmentArgs by CategoryFragment.CategoryFragmentArgs()
+
+    class CategoryFragmentArgs {
+        operator fun getValue(categoryFragment: CategoryFragment, property: KProperty<*>): CategoryFragment.CategoryFragmentArgs {
+
+            return TODO("Provide the return value")
+        }
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -41,8 +49,19 @@ class CategoryFragment : Fragment() {
         }
     }
 
+    class CategoryFragmentDirections {
+        companion object {
+            fun actionCategoryFragmentToDetailsFragment(place: Place): Any {
+
+                return TODO("Provide the return value")
+            }
+        }
+
+    }
+
     override fun onDestroyView() {
         super.onDestroyView()
         binding.placesRecyclerView.adapter = null
     }
+
 }

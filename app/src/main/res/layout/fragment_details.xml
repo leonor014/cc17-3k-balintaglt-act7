@@ -28,5 +28,4 @@
         android:layout_marginTop="20dp"
         android:text="Location of the selected place"
         android:textSize="16sp"/>
-
 </LinearLayout>
